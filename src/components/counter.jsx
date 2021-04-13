@@ -28,6 +28,7 @@ class Counter extends Component {
   render() {
     return (
       <div>
+        <span>{this.props.counter.nom}</span>
         <span className={this.getBadgeClasses()}>{this.formatCount()}</span>
         <button
           onClick={() => this.props.onIncrement(this.props.counter)}
@@ -35,7 +36,12 @@ class Counter extends Component {
         >
           Increment
         </button>
-        <button onClick={() => this.props.onDelete(this.props.counter.id)} className="btn btn-danger btn-sm m-2">Delete</button>
+        <button
+          onClick={() => this.props.onDelete(this.props.counter.id)}
+          className="btn btn-danger btn-sm m-2"
+        >
+          Delete
+        </button>
       </div>
     );
     // <div>{this.renderTags()}</div>;

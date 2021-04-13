@@ -5,10 +5,10 @@ import Counters from "./components/counters";
 export default class App extends Component {
   state = {
     counters: [
-      { id: 1, value: 4 },
-      { id: 2, value: 0 },
-      { id: 3, value: 0 },
-      { id: 4, value: 0 },
+      { id: 1, value: 4, nom: "saucisse" },
+      { id: 2, value: 0, nom: "jambon" },
+      { id: 3, value: 0, nom: "pizza" },
+      { id: 4, value: 0, nom: "kebab" },
     ],
   };
 
